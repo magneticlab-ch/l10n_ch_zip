@@ -1,6 +1,6 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * l10n_ch_states
+# * l10n_ch_zip
 # 
 # Translators:
 # OCA Transbot <transbot@odoo-community.org>, 2017
@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-14 04:14+0000\n"
-"PO-Revision-Date: 2017-01-14 04:14+0000\n"
+"POT-Creation-Date: 2017-01-07 03:35+0000\n"
+"PO-Revision-Date: 2017-01-07 03:35+0000\n"
 "Last-Translator: leemannd <denis.leemann@camptocamp.com>, 2017\n"
 "Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -19,152 +19,100 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_AI
-msgid "Appenzell Inner Rhodes"
-msgstr "Appenzell Rhodes-Intérieures"
+#. module: l10n_ch_zip
+#: model:ir.model.fields,field_description:l10n_ch_zip.field_res_better_zip_active
+msgid "Active"
+msgstr "Actif"
 
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_AR
-msgid "Appenzell Outher Rhodes"
-msgstr "Appenzell Rhodes-Extérieures"
+#. module: l10n_ch_zip
+#: model:ir.model.fields,help:l10n_ch_zip.field_res_better_zip_lang2
+msgid ""
+"Additional language within a postcode.\n"
+"One alternative language code may appear for each postcode.\n"
+"1 = German, 2 = French, 3 = Italian, 4 = Romansh."
+msgstr ""
 
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_AG
-msgid "Argovia"
-msgstr "Argovie"
+#. module: l10n_ch_zip
+#: model:ir.model.fields,field_description:l10n_ch_zip.field_res_better_zip_additional_digit
+msgid "Additional poscode digits"
+msgstr ""
 
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_BS
-msgid "Basel-City"
-msgstr "Bâle-Ville"
+#. module: l10n_ch_zip
+#: model:ir.model.fields,field_description:l10n_ch_zip.field_res_better_zip_lang2
+msgid "Alternative language code"
+msgstr ""
 
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_BL
-msgid "Basel-Country"
-msgstr "Bâle-Campagne"
+#. module: l10n_ch_zip
+#: model:ir.model,name:l10n_ch_zip.model_res_better_zip
+msgid "City/locations completion object"
+msgstr ""
 
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_BE
-msgid "Bern"
-msgstr "Berne"
+#. module: l10n_ch_zip
+#: model:ir.model.fields,field_description:l10n_ch_zip.field_res_better_zip_communitynumber_bfs
+msgid "FSO municipality number (BFSNR)"
+msgstr ""
 
-#. module: l10n_ch_states
-#: model:ir.model,name:l10n_ch_states.model_res_country_state
-msgid "Country state"
-msgstr "Canton"
+#. module: l10n_ch_zip
+#: model:ir.model.fields,help:l10n_ch_zip.field_res_better_zip_sort
+msgid ""
+"Indicates if the postcode is included in the «sort file»(MAT[CH]sort): 0 = "
+"not included, 1 = included. Delivery information with addresses (only "
+"postcode and streets) are published in the sort file."
+msgstr ""
 
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_FR
-msgid "Fribourg"
-msgstr "Fribourg"
+#. module: l10n_ch_zip
+#: model:ir.model.fields,help:l10n_ch_zip.field_res_better_zip_post_delivery_through
+msgid ""
+"Indicates the post office (ONRP) that delivers most of the letters to the "
+"postcode addresses. This information can be used for bag addresses too."
+msgstr ""
 
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_GE
-msgid "Geneva"
-msgstr "Genève"
+#. module: l10n_ch_zip
+#: model:ir.model.fields,help:l10n_ch_zip.field_res_better_zip_lang
+msgid ""
+"Language (language majority) within a postcode area. 1 = German, 2 = French,"
+" 3 = Italian, 4 = Romansh. For multi-lingual localities, the main language "
+"is indicated."
+msgstr ""
 
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_DE
-msgid "Germany"
-msgstr "Allemagne"
+#. module: l10n_ch_zip
+#: model:ir.model.fields,field_description:l10n_ch_zip.field_res_better_zip_lang
+msgid "Language code"
+msgstr ""
 
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_GL
-msgid "Glarus"
-msgstr "Glaris"
+#. module: l10n_ch_zip
+#: model:ir.model.fields,field_description:l10n_ch_zip.field_res_better_zip_post_delivery_through
+msgid "Mail delivery by"
+msgstr ""
 
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_GR
-msgid "Grisons"
-msgstr "Grisons"
+#. module: l10n_ch_zip
+#: model:ir.model.fields,help:l10n_ch_zip.field_res_better_zip_communitynumber_bfs
+msgid ""
+"Numbering used by the Federal Statistical Office for municipalities in "
+"Switzerland and the Principality of Liechtenstein"
+msgstr ""
 
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_IT
-msgid "Italy"
-msgstr "Italie"
+#. module: l10n_ch_zip
+#: model:ir.model.fields,field_description:l10n_ch_zip.field_res_better_zip_zip_type
+msgid "Postcode type"
+msgstr ""
 
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_JU
-msgid "Jura"
-msgstr "Jura"
+#. module: l10n_ch_zip
+#: model:ir.model.fields,field_description:l10n_ch_zip.field_res_better_zip_sort
+msgid "Present in sort file"
+msgstr ""
 
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_LU
-msgid "Luzern"
-msgstr "Lucerne"
+#. module: l10n_ch_zip
+#: model:ir.model.fields,help:l10n_ch_zip.field_res_better_zip_onrp
+msgid "Primary Key"
+msgstr ""
 
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_NE
-msgid "Neuchâtel"
-msgstr "Neuchâtel"
+#. module: l10n_ch_zip
+#: model:ir.model.fields,field_description:l10n_ch_zip.field_res_better_zip_onrp
+msgid "Swiss Post classification no. (ONRP)"
+msgstr ""
 
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_NW
-msgid "Nidwald"
-msgstr "Nidwald"
-
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_OW
-msgid "Obwald"
-msgstr "Obwald"
-
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_FL
-msgid "Principality of Liechtenstein"
-msgstr "Principauté du Liechtenstein"
-
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_SH
-msgid "Schaffhausen"
-msgstr "Schaffhouse"
-
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_SZ
-msgid "Schwyz"
-msgstr "Schwytz"
-
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_SO
-msgid "Solothurn"
-msgstr "Soleure"
-
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_SG
-msgid "St. Gallen"
-msgstr "Saint Gall"
-
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_TG
-msgid "Thurgovia"
-msgstr "Thurgovie"
-
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_TI
-msgid "Ticino"
-msgstr "Tessin"
-
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_UR
-msgid "Uri"
-msgstr "Uri"
-
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_VS
-msgid "Valais"
-msgstr "Valais"
-
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_VD
-msgid "Vaud"
-msgstr "Vaud"
-
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_ZG
-msgid "Zug"
-msgstr "Zoug"
-
-#. module: l10n_ch_states
-#: model:res.country.state,name:l10n_ch_states.state_ZH
-msgid "Zurich"
-msgstr "Zurich"
+#. module: l10n_ch_zip
+#: model:ir.model.fields,field_description:l10n_ch_zip.field_res_better_zip_valid_from
+msgid "Valid from"
+msgstr "Valide dès"

@@ -2,14 +2,16 @@
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 
-==========================
-Switzerland Country States
-==========================
 
-This module extends res.country.states for Switzerland. It brings states with
-code and name for those who only want the states without cities.
+============================
+Swiss postal code (ZIP) list
+============================
 
-For those who also want cities, please install *Switzerland - Postal codes (ZIP) list*  (`l10n_ch_zip`).
+This module will load all the Swiss postal codes (ZIP) to ease the input
+of partners.
+
+It is not mandatory to use them in Odoo in Switzerland, but can improve
+the user experience.
 
 
 Installation
@@ -21,20 +23,49 @@ To install this module, you need to:
 * or directly install it over Odoo-Apps
 
 
+Dependencies
+============
+
+The module ``base_location`` is required. It is available in
+https://github.com/OCA/partner-contact/
+
+Since Version 8.0.2.0 the module ``l10n_ch_states`` is required.
+It is also available in https://github.com/OCA/l10n-switzerland
+
+
+Configuration
+=============
+
+To configure this module, you need to:
+
+* do nothing
+
+
 Usage
 =====
+
+To use this module, you need to:
+
+* Fill the new field in the partner form with a zip or a city from Switzerland
+* Than you get a list with possible entries.
+* The one you select is auto-filled in the zip-, citiy-, state- and country-field.
 
 .. image:: https://odoo-community.org/website/image/ir.attachment/5784_f2813bd/datas
    :alt: Try me on Runbot
    :target: https://runbot.odoo-community.org/runbot/125/10.0
 
+Known issues / Roadmap
+======================
+
+* actually there are no issues known
+
+
 Bug Tracker
 ===========
 
-Bugs are tracked on `GitHub Issues
-<https://github.com/OCA/l10n-switzerland/issues>`_. In case of trouble, please
-check there if your issue has already been reported. If you spotted it first,
-help us smashing it by providing a detailed and welcomed feedback.
+Bugs are tracked on `GitHub Issues <https://github.com/OCA/l10n-switzerland/issues>`_.
+In case of trouble, please check there if your issue has already been reported.
+If you spotted it first, help us smashing it by providing a detailed and welcomed feedback.
 
 
 Credits
@@ -43,7 +74,11 @@ Credits
 Contributors
 ------------
 
-* Mathias Neef <mn@copado.de>
+* Nicolas Bessi (Camptocamp)
+* Olivier Jossen (Brain Tec)
+* Guewen Baconnier (Camptocamp)
+* Mathias Neef (copadoMEDIA)
+* Yannick Vaucher (Camptocamp)
 
 Maintainer
 ----------
